@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
+import WordForm from './components/WordForm'
 
 function App() {
 
   return (
     <>
+      <WordForm></WordForm>
     </>
   )
 }
