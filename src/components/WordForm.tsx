@@ -97,7 +97,7 @@ function WordForm() {
                 {partOfSpeech === "verb" ? (
                     <>
                         <label htmlFor="isRegular">Regular</label>
-                        <input type="checkbox" id="isRegular" {...register("verbDetails.isRegular")} checked></input>
+                        <input type="checkbox" id="isRegular" {...register("verbDetails.isRegular", {value: true})}></input>
 
                         <label htmlFor="present">Present tense (3rd person, singular)</label>
                         <input type="text" id="present" {...register("verbDetails.present")}></input>
@@ -112,7 +112,7 @@ function WordForm() {
                 {partOfSpeech === "adjective" ? (
                     <>
                         <label htmlFor="isRegular">Regular</label>
-                        <input type="checkbox" id="isRegular" {...register("adjectiveDetails.isRegular")} checked></input>
+                        <input type="checkbox" id="isRegular" {...register("adjectiveDetails.isRegular", {value: true})}></input>
 
                         <label htmlFor="comparative">Comparative</label>
                         <input type="text" id="comparative" {...register("adjectiveDetails.comparative")}></input>
