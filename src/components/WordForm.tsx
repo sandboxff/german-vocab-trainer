@@ -43,6 +43,7 @@ interface WordFormInput {
         comparative: string,
         superlative: string
     }
+    note: string
 }
 
 function WordForm() {
@@ -155,6 +156,8 @@ function WordForm() {
                         <p className="form-validation-error">{errors.adjectiveDetails?.superlative?.message}</p>
                     </>
                 ): (<></>)}
+                <label htmlFor="note">Note</label>
+                <input type="text" id="note" {...register("note")}></input>
                 <input type="submit" />
             </form>
         </div>
